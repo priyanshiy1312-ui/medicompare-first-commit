@@ -1,0 +1,25 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Environment / secrets  -- never commit these
+.env
+.env.local
+*.pem
+credentials
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (not used by this project, kept for safety)
+node_modules/
