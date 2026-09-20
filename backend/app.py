@@ -221,4 +221,6 @@ if __name__ == "__main__":
     else:
         print("  Bedrock is off. Set AI_MODE=bedrock to use Amazon Bedrock.")
     print("  API     : http://127.0.0.1:5000/api/health\n")
-    app.run(host="127.0.0.1", port=5000, debug=True)
+        import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
