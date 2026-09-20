@@ -13,6 +13,7 @@ POST /api/chat      Ask the MediCompare AI assistant a question.
 Run with:  python app.py
 """
 
+import os
 import logging
 
 from flask import Flask, jsonify, request
@@ -221,6 +222,5 @@ if __name__ == "__main__":
     else:
         print("  Bedrock is off. Set AI_MODE=bedrock to use Amazon Bedrock.")
     print("  API     : http://127.0.0.1:5000/api/health\n")
-        import os
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)
