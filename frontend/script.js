@@ -4,7 +4,7 @@
    only ever calls our own API.
    ========================================================================== */
 
-const API_BASE = "http://127.0.0.1:5000";
+const API_BASE = "https://medicompare-first-commit.onrender.com";
 
 // Remembers the last successful comparison so the AI assistant has context.
 let lastComparison = null;
